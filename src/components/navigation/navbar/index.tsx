@@ -1,9 +1,9 @@
-import { ModeToggle } from "@/components/navigation/navbar/ModeToggle";
-import { Button } from "@/components/ui/button";
-import { Search } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import * as React from "react";
+import { ModeToggle } from "@/components/navigation/navbar/ModeToggle"
+import { Button } from "@/components/ui/button"
+import { Search } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import * as React from "react"
 
 const Navbar = () => {
   return (
@@ -28,7 +28,7 @@ const Navbar = () => {
 
       <ModeToggle />
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
