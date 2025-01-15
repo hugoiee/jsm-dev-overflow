@@ -22,12 +22,12 @@ const compat = new FlatCompat({
       "error",
       {
         groups: [
-          "builtin", // Built-in types are first
-          "external", // External libraries
-          "internal", // Internal modules
-          ["parent", "sibling"], // Parent and sibling types can be mingled together
-          "index", // Then the index file
-          "object", // Object imports
+          "builtin", // 内置类型排在第一位
+          "external", // 外部库
+          "internal", // 内部模块
+          ["parent", "sibling"], // 父级和同级类型可以混合在一起
+          "index", // 然后是索引文件
+          "object", // 对象导入
         ],
         newlinesBetween: "always",
         pathGroups: [

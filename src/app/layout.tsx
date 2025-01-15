@@ -1,3 +1,5 @@
+import Navbar from "@/components/navigation/navbar";
+import { ThemeProvider } from "@/context/theme-provider";
 import type { Metadata } from "next";
 import "./globals.css";
 import { Inter } from "next/font/google";
@@ -19,8 +21,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="zh-CN" className={inter.className}>
-      <body>{children}</body>
+    <html lang="zh-CN" className={inter.className} suppressHydrationWarning>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="system">
+          <Navbar />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
